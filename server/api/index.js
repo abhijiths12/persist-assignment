@@ -74,4 +74,4 @@ app.get("/", (req, res) => {
 app.use("/api/auth", AuthRoutes);
 
 // Export the serverless handler
-export const handler = serverless(app);
+export default serverless(app);
