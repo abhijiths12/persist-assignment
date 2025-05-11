@@ -13,19 +13,23 @@ const app = express();
 const port = process.env.PORT;
 const databaseURL = process.env.DATABASE_URL;
 
+
+
+
 app.use(cors({
     origin:[process.env.ORGIN],
     methods: ['GET','POST','PUT','PATCH','DELETE'],
     credentials: true,
 }))
 
-app.use(cookieParser())
-
-app.use(express.json())
 
 app.get('/',(req,res) => {
     res.status(200).send("hello from the backend")
 })
+app.use(cookieParser())
+
+app.use(express.json())
+
 
 app.use('/api/auth',AuthRoutes)
 
