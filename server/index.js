@@ -23,6 +23,9 @@ app.use(cookieParser())
 
 app.use(express.json())
 
+app.get('/',(req,res) => {
+    res.status(200).send("hello from the backend")
+})
 
 app.use('/api/auth',AuthRoutes)
 

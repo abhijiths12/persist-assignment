@@ -8,7 +8,7 @@ const navigation = [
   { name: 'Startupathon Guide', href: '#', current: false },
   { name: 'How to Win', href: '#', current: false },
   { name: 'Mentor Network', href: '#', current: false },
-  { name: 'Apply For Fellowship', href: '#', current: true },
+  { name: 'Apply For Fellowship', href: '/challengemanagement', current: true },
 
   
 
