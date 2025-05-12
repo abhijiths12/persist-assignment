@@ -4,6 +4,7 @@ import User from "../models/sampleModels.js";
 export const InsertChallenges = async(req,res,next) => {
     try {
         await User.create(req.body)
+        console.log('one data inserted')
         
     }
     catch(error) {
@@ -18,6 +19,7 @@ export const challengesData = async(req,res,next) => {
     try {
         let data = await User.find()
         // console.log(data)
+        console.log('data viewed')
         res.json(data)
     }
     catch(error) {

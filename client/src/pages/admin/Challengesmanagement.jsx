@@ -49,7 +49,7 @@ function AdminChallenges() {
             // setData(result)
         })
         setRefresh(prev => prev + 1)
-        navigate('/home')
+        navigate('/')
 
 
     }

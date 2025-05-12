@@ -16,11 +16,18 @@ const databaseURL = process.env.DATABASE_URL;
 
 
 
+// app.use(cors({
+//     origin:[process.env.ORGIN],
+//     methods: ['GET','POST','PUT','PATCH','DELETE'],
+//     credentials: true,
+// }))
+
+
 app.use(cors({
-    origin:[process.env.ORGIN],
+    origin: [process.env.ORIGIN],
     methods: ['GET','POST','PUT','PATCH','DELETE'],
     credentials: true,
-}))
+}));
 
 
 app.get('/',(req,res) => {
