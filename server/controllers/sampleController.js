@@ -1,13 +1,17 @@
-import User from "../models/sampleModels.js"
+import User from "../models/sampleModels.js";
+
 
 export const InsertChallenges = async(req,res,next) => {
     try {
         await User.create(req.body)
+        
     }
     catch(error) {
         console.error(error)
     }
 }
+
+
 
 
 export const challengesData = async(req,res,next) => {
