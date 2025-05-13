@@ -15,7 +15,7 @@ export const InsertChallenges = async(req,res,next) => {
         //     challenge:'dfhfj',
         //     status:'dfhfj'
         // }
-
+        console.log(req.body)
 
         await User.create(req.body)
         console.log('one data inserted')
