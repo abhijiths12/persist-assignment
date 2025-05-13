@@ -32,19 +32,6 @@ export const InsertChallenges = async(req,res,next) => {
 export const challengesData = async(req,res,next) => {
     try {
         let data = await User.find()
-              let data1 = {
-            title:'hfd',
-            url:'fhff',
-            funding:'dfhfj',
-            deadline:'dfhfj',
-            Description:'dfhfj',
-            review:'dfhfj',
-            challenge:'dfhfj',
-            status:'dfhfj'
-        }
-
-
-        await User.create(data1)
         // console.log(data)
         console.log('data viewed')
         res.json(data)
