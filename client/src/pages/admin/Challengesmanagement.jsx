@@ -73,6 +73,7 @@ function AdminChallenges() {
                 Accept:'application/json',
                 'Content-Type':'application/json'
             },
+            credentials: 'include',
             body: JSON.stringify(delid)
         }).then((res) => res.json()).then((result) => {
             // console.log(result)

@@ -5,19 +5,19 @@ export const InsertChallenges = async(req,res,next) => {
     try {
 
 
-                let data = {
-            title:'hfd',
-            url:'fhff',
-            funding:'dfhfj',
-            deadline:'dfhfj',
-            Description:'dfhfj',
-            review:'dfhfj',
-            challenge:'dfhfj',
-            status:'dfhfj'
-        }
+        //         let data = {
+        //     title:'hfd',
+        //     url:'fhff',
+        //     funding:'dfhfj',
+        //     deadline:'dfhfj',
+        //     Description:'dfhfj',
+        //     review:'dfhfj',
+        //     challenge:'dfhfj',
+        //     status:'dfhfj'
+        // }
 
 
-        await User.create(data)
+        await User.create(req.body)
         console.log('one data inserted')
         
     }
